@@ -1,0 +1,28 @@
+---
+import { skills } from "@/data/skills";
+import Section from "./Section.astro";
+---
+
+<Section
+  id="skills"
+  eyebrow="Toolbox"
+  title="Languages & tech stack"
+  description="Technologies I work with, and the context I have used them in."
+>
+  <ul class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+    {
+      skills.map((skill) => (
+        <li
+          data-reveal
+          class="rounded-xl border border-line bg-surface/60 p-6 transition-colors duration-200 hover:border-muted/40"
+        >
+          <div class="flex items-center gap-3">
+            <i class={`${skill.icon} colored text-3xl`} aria-hidden="true" />
+            <h3 class="text-base font-medium text-ink">{skill.name}</h3>
+          </div>
+          <p class="mt-4 text-sm leading-relaxed text-muted">{skill.description}</p>
+        </li>
+      ))
+    }
+  </ul>
+</Section>

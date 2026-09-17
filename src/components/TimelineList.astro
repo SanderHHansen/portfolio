@@ -1,0 +1,32 @@
+---
+import type { TimelineEntry } from "@/data/types";
+
+interface Props {
+  entries: TimelineEntry[];
+}
+
+const { entries } = Astro.props;
+---
+
+<ol class="relative ml-1.5 space-y-10 border-l border-line pl-8">
+  {
+    entries.map((entry) => (
+      <li data-reveal class="relative">
+        <span class="absolute top-1.5 -left-[2.375rem] flex h-3 w-3 items-center justify-center rounded-full border border-line bg-canvas">
+          <span
+            class:list={[
+              "h-1.5 w-1.5 rounded-full",
+              entry.type === "work" ? "bg-accent" : "bg-muted",
+            ]}
+          />
+        </span>
+        <p class="font-mono text-xs tracking-wider text-muted uppercase">{entry.period}</p>
+        <h4 class="mt-2 text-lg font-medium text-ink">{entry.title}</h4>
+        <p class="mt-0.5 text-sm text-accent">{entry.place}</p>
+        {entry.description && (
+          <p class="mt-3 max-w-2xl text-sm leading-relaxed text-muted">{entry.description}</p>
+        )}
+      </li>
+    ))
+  }
+</ol>
