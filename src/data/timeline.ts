@@ -27,7 +27,7 @@ export const timeline: TimelineEntry[] = [
   {
     period: "January 2023 – February 2023",
     type: "work",
-    title: "Medical Student with License",
+    title: "Doctor (Medical Student with License)",
     place: "Lymphoma Department, Radiumhospitalet",
     description:
       "Specialized internship equivalent to a 100% position. Conducted patient intake records focusing on diagnosis clarification and curative chemotherapy.",
@@ -35,14 +35,14 @@ export const timeline: TimelineEntry[] = [
   {
     period: "June 2022 – January 2023",
     type: "work",
-    title: "Medical Student with License",
+    title: "Doctor (Medical Student with License)",
     place: "Specialist Hospital for Epilepsy (SSE)",
     description: "Primarily responsible for patient admission records and discharge summaries.",
   },
   {
     period: "December 2021 – January 2022",
     type: "work",
-    title: "Medical Student with License",
+    title: "Doctor (Medical Student with License)",
     place: "Isolation Post INFS2, Ullevål Hospital",
     description:
       "Focused on clinical observations in cases of respiratory failure. Work centered around COVID-19 patients and high flow oxygen treatment with Airvo 2.",
@@ -60,13 +60,6 @@ export const timeline: TimelineEntry[] = [
     title: "Care Assistant",
     place: "Lovisenberg Care",
     description: "Worked in the dementia care unit.",
-  },
-  {
-    period: "October 2019 – April 2020",
-    type: "work",
-    title: "Private Tutor",
-    place: "MentorNorge",
-    description: "Tutored elementary, middle, and high school students.",
   },
   {
     period: "August 2017 – June 2023",
