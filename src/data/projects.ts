@@ -2,14 +2,14 @@ import type { Project } from "./types";
 
 export const projects: Project[] = [
   {
-    name: "Project One",
+    name: "Maze Visualizer",
     description:
-      "Placeholder description. Explain what the project does, the problem it solves and your role.",
+      "A website for visualizing the generation and solving of two-dimensional 'perfect' mazes.",
     image: "images/projects/placeholder.svg",
     imageAlt: "Screenshot of Project One",
-    githubUrl: "https://github.com/example/project-one",
-    liveUrl: "https://example.com/project-one",
-    tags: ["Astro", "TypeScript", "Tailwind CSS"],
+    githubUrl: "https://github.com/SanderHHansen/maze-visualizer",
+    liveUrl: "https://sanderhhansen.github.io/maze-visualizer/",
+    tags: ["TypeScript", "Tailwind CSS"],
   },
   {
     name: "Project Two",

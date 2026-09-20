@@ -38,7 +38,7 @@ export interface IntroLink {
 export interface Intro {
   name: string;
   role: string;
-  description: string;
+  description: string[];
   location: string;
   links: IntroLink[];
 }
