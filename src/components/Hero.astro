@@ -11,9 +11,9 @@ import { intro } from "@/data/intro";
       {intro.name}
     </h1>
     <p class="mt-4 font-mono text-sm text-muted">{intro.location}</p>
-    <p class="mt-8 max-w-2xl text-base leading-relaxed text-muted sm:text-lg">
-      {intro.description}
-    </p>
+    <div class="mt-8 max-w-2xl space-y-4 text-base leading-relaxed text-muted sm:text-lg">
+      {intro.description.map((paragraph) => <p>{paragraph}</p>)}
+    </div>
     <div class="mt-10 flex flex-wrap items-center gap-3">
       {
         intro.links.map((link, index) => (
